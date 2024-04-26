@@ -13,11 +13,12 @@ public class Animal_script : MonoBehaviour
     public Animal_script Animals;
     public Material Wrongchoice;
     public MeshRenderer mr;
-    public GameObject spiders;
+    public GameObject spiders, unicorn;
     public Material startcolor;
     public int spawnthings;
-    private float number1 = 5.5f,number2 = 6.5f;
+    //private float number1 = 5.5f,number2 = 6.5f;
     public bool checkedanimal = false;
+    public static bool spawnunicorn = false;
     
    
  
@@ -33,6 +34,7 @@ public class Animal_script : MonoBehaviour
        // rb.velocity = new Vector3(Random.Range(Random.Range(-number2,-number1),Random.Range(number1,number2)),0,Random.Range(Random.Range(-number2,-number1),Random.Range(number1,number2)));
         player = FindObjectOfType<FirstPersonController_Script>();
         transform.Rotate(0,Random.Range(0,359),0);
+        spawnthings = Random.Range(1,5);
         //Instructions = FindObjectOfType<TextMeshProUGUI>();
         // mr.material.color = new Color(Random.Range(0.0f,1.0f),Random.Range(0.0f,1.0f), Random.Range(0.0f,1.0f));
 
@@ -51,16 +53,24 @@ public class Animal_script : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && checkedanimal == false)
             {
                 mr.material = Wrongchoice;
-                spawnthings = Random.Range(1,5);
                 player.Damage(2);
               //  Instructions.text = "";
                 checkedanimal = true;
                 
-                if (spawnthings == 1)
+                if (spawnthings == 3)
                 {
                     Instantiate(spiders, transform.position, Quaternion.identity);
                     Destroy(gameObject);
                 }
+
+                if (spawnthings == 2 && spawnunicorn == false)
+                {
+                    Instantiate(unicorn, transform.position, Quaternion.identity);
+                    Destroy(gameObject);
+                    spawnunicorn = true;
+                }
+                
+                
                 
             }
             

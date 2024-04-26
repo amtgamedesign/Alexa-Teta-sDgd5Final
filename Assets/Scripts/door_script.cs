@@ -9,32 +9,39 @@ public class door_script : MonoBehaviour
     public TextMeshProUGUI Instructions;
     public bool text;
     public Vector3 doorchange;
-
     public Vector3 doorrotate;
+    public static bool notegone = false;
+    
+    
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(player.transform.position, transform.position) < 15)
+        if (notegone == true)
         {
-            if (text == false)
+            if (Vector3.Distance(player.transform.position, transform.position) < 15)
             {
-                Instructions.text = "Press E";
-            }
-            
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                transform.position = doorchange;
+                if (text == false)
+                {
+                    Instructions.text = "Press E to open door";
+                }
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    transform.position = doorchange;
                     //new Vector3(-10.7700005f,12.3540001f,7.53000021f);
-                transform.Rotate(doorrotate);
-                text = true;
-                Instructions.text = "";
+                    transform.Rotate(doorrotate);
+                    text = true;
+                    Instructions.text = "";
+                }
+
             }
-            
-        }
-        else
-        {
-            if (Vector3.Distance(player.transform.position, transform.position) > 16) 
-            { Instructions.text = ""; }
+            else
+            {
+                if (Vector3.Distance(player.transform.position, transform.position) > 16)
+                {
+                    Instructions.text = "";
+                }
+            }
         }
     }
 }

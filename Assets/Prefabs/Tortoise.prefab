@@ -103,10 +103,9 @@ MonoBehaviour:
   Wrongchoice: {fileID: -2379236638346977297, guid: a56a7a0735b3f7f48b02c7b930940693, type: 3}
   mr: {fileID: 8548514748221908144}
   spiders: {fileID: 7832922918660702177, guid: ce8d73ca93b445045bc9538eb61a821a, type: 3}
+  unicorn: {fileID: 2921540615597744988, guid: 466b74cf9226f274abd6621939da0d88, type: 3}
   startcolor: {fileID: 0}
-  spawnspiders: 0
-  speed: {x: 0, y: 0, z: 0}
-  checker: {x: 0, y: 0, z: 0}
+  spawnthings: 0
   checkedanimal: 0
 --- !u!54 &8257753894701759779
 Rigidbody:
