@@ -22,7 +22,8 @@ public class FirstPersonController_Script : MonoBehaviour
     public Transform speedboostbar;
     public float number = 10;
     
-    public int animalcheck = 0;
+    public static int animalcheck = 0;
+
 
  
     
@@ -32,7 +33,6 @@ public class FirstPersonController_Script : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
- 
     }
 
     public void Damage(float amt)
@@ -40,6 +40,11 @@ public class FirstPersonController_Script : MonoBehaviour
         Health -= amt;
         float hperc = Health / Healthmax;
         Healthbar.localScale = new Vector3(hperc * 1,1,1);
+    }
+    
+    public void Updateanimalcount(int amt)
+    {
+        animalcheck += amt;
     }
     
     public void Speedboostleft(float amt)

@@ -34,7 +34,7 @@ public class Animal_script : MonoBehaviour
        // rb.velocity = new Vector3(Random.Range(Random.Range(-number2,-number1),Random.Range(number1,number2)),0,Random.Range(Random.Range(-number2,-number1),Random.Range(number1,number2)));
         player = FindObjectOfType<FirstPersonController_Script>();
         transform.Rotate(0,Random.Range(0,359),0);
-        spawnthings = Random.Range(1,5);
+        spawnthings = Random.Range(1,10);
         //Instructions = FindObjectOfType<TextMeshProUGUI>();
         // mr.material.color = new Color(Random.Range(0.0f,1.0f),Random.Range(0.0f,1.0f), Random.Range(0.0f,1.0f));
 
@@ -54,8 +54,10 @@ public class Animal_script : MonoBehaviour
             {
                 mr.material = Wrongchoice;
                 player.Damage(2);
+                player.Updateanimalcount(1);
               //  Instructions.text = "";
                 checkedanimal = true;
+                
                 
                 if (spawnthings == 3)
                 {
@@ -69,6 +71,8 @@ public class Animal_script : MonoBehaviour
                     Destroy(gameObject);
                     spawnunicorn = true;
                 }
+                
+                
                 
                 
                 
