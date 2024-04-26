@@ -98,15 +98,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9272357f1d72145839455dbbdd9af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Instructions: {fileID: 0}
   player: {fileID: 0}
+  Animals: {fileID: 0}
   Wrongchoice: {fileID: -2379236638346977297, guid: a56a7a0735b3f7f48b02c7b930940693, type: 3}
   mr: {fileID: 3028388084137622565}
-  rb: {fileID: 1003419614089531274}
   spiders: {fileID: 7832922918660702177, guid: ce8d73ca93b445045bc9538eb61a821a, type: 3}
   startcolor: {fileID: -4125471728267972529, guid: d1430603fe7325e4ab04fcabc595674a, type: 3}
   spawnspiders: 0
-  speed: 0
+  speed: {x: 0, y: 0, z: 0}
+  checker: {x: 0, y: 0, z: 0}
+  checkedanimal: 0
 --- !u!54 &1003419614089531274
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -132,7 +133,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &845813523682977718
 BoxCollider:

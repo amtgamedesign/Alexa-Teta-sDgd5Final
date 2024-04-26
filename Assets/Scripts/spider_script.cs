@@ -11,7 +11,7 @@ public class spider_script : MonoBehaviour
     void Start()
     {
         body = FindObjectOfType<body_script>();
-        Invoke("Chase",1.2f);
+        Invoke("Chase",1f);
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class spider_script : MonoBehaviour
 
         if (startchase == true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, body.transform.position, Random.Range(.01f, .2f));
+            transform.position = Vector3.MoveTowards(transform.position, body.transform.position, Random.Range(.1f, .2f));
         }
     }
 
