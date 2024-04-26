@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 629991917415621251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.8114624, y: 1.79, z: 17.127556}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -136,6 +136,7 @@ MonoBehaviour:
   mr: {fileID: 8619766801024171193}
   spiders: {fileID: 7832922918660702177, guid: ce8d73ca93b445045bc9538eb61a821a, type: 3}
   unicorn: {fileID: 2921540615597744988, guid: 466b74cf9226f274abd6621939da0d88, type: 3}
+  bees: {fileID: 8397680741694258980, guid: e5a925ac2295d9b42aa72a8663355c60, type: 3}
   startcolor: {fileID: 0}
   spawnthings: 0
   checkedanimal: 0

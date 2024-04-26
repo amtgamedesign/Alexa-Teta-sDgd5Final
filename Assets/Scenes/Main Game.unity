@@ -210,7 +210,6 @@ MonoBehaviour:
   speedboostmax: 10
   speedboostbar: {fileID: 1333850250}
   number: 10
-  animalcheck: 0
 --- !u!1001 &3649935
 PrefabInstance:
   m_ObjectHideFlags: 0

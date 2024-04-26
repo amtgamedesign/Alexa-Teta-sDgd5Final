@@ -35,7 +35,18 @@ public class Proj_script : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+       
+        bee_script bee = other.gameObject.GetComponent<bee_script>();
+        if (bee != null)
+        {
+            Destroy(other.gameObject);
+        }
         
+        beehive_script hive = other.gameObject.GetComponent<beehive_script>();
+        if (hive != null)
+        {
+            Destroy(other.gameObject);
+        }
         
 
         //If I hit anything, I despawn

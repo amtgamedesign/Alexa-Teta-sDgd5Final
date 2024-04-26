@@ -13,7 +13,7 @@ public class Animal_script : MonoBehaviour
     public Animal_script Animals;
     public Material Wrongchoice;
     public MeshRenderer mr;
-    public GameObject spiders, unicorn;
+    public GameObject spiders, unicorn, bees;
     public Material startcolor;
     public int spawnthings;
     //private float number1 = 5.5f,number2 = 6.5f;
@@ -65,16 +65,18 @@ public class Animal_script : MonoBehaviour
                     Destroy(gameObject);
                 }
 
-                if (spawnthings == 2 && spawnunicorn == false)
+                if (spawnthings == 8 && spawnunicorn == false)
                 {
                     Instantiate(unicorn, transform.position, Quaternion.identity);
                     Destroy(gameObject);
                     spawnunicorn = true;
                 }
-                
-                
-                
-                
+
+                if (spawnthings == 6)
+                {
+                    Instantiate(bees,transform.position, Quaternion.identity);
+                    Destroy(gameObject);
+                }
                 
             }
             
