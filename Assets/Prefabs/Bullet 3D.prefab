@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RB: {fileID: 1472414963298994856}
-  Speed: 25
+  Speed: 35
   Knockback: 10
 --- !u!135 &1973095284041565072
 SphereCollider:

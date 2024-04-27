@@ -10,7 +10,7 @@ public class Rotation_script : MonoBehaviour
     void Start()
     {
         transform.Rotate(0,Random.Range(0,359),0);
-        transform.position = new Vector3(transform.position.x,transform.position.y + Random.Range(-10f,-9f),transform.position.z);
+        transform.position = new Vector3(transform.position.x,transform.position.y + Random.Range(-15f,-13f),transform.position.z);
         transform.localScale = new Vector3(4, 4, 4);
 
     }

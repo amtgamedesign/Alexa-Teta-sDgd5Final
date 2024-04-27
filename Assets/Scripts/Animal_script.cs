@@ -45,7 +45,7 @@ public class Animal_script : MonoBehaviour
     {
         //checker = rb.velocity;
        
-        if (Vector3.Distance(player.transform.position, transform.position) < 16)
+        if (Vector3.Distance(player.transform.position, transform.position) < 10)
         {
            // rb.velocity = new Vector3(0, 0,0);
           //  Instructions.text = "";
@@ -95,27 +95,7 @@ public class Animal_script : MonoBehaviour
         
         
     }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        // if (other.gameObject.CompareTag("WallH"))
-        // {
-        //     Vector3 vel = rb.velocity;
-        //     vel.x *= -1;
-        //     vel.z *= -1;
-        //     rb.velocity = vel;
-        //   
-        // }
-        //
-        // if (other.gameObject.CompareTag("WallV"))
-        // {
-        //     Vector3 vel = rb.velocity;
-        //     vel.x *= -1;
-        //     vel.z *= -1;
-        //     rb.velocity = vel;
-        //   
-        // }
-    }
+    
 
     public void OnCollisionEnter(Collision other)
     {

@@ -105,6 +105,7 @@ MonoBehaviour:
   spiders: {fileID: 7832922918660702177, guid: ce8d73ca93b445045bc9538eb61a821a, type: 3}
   unicorn: {fileID: 2921540615597744988, guid: 466b74cf9226f274abd6621939da0d88, type: 3}
   bees: {fileID: 8397680741694258980, guid: e5a925ac2295d9b42aa72a8663355c60, type: 3}
+  heart: {fileID: 7873230822452246629, guid: a1f2f6389ae5bd94d9ecb880a2f8a79c, type: 3}
   startcolor: {fileID: 0}
   spawnthings: 0
   checkedanimal: 0

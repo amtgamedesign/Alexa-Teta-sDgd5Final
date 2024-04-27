@@ -20,7 +20,7 @@ public class FirstPersonController_Script : MonoBehaviour
     public float speedboost = 10;
     public float speedboostmax = 10;
     public Transform speedboostbar;
-    public float number = 10, stunned = 0;
+    public float number = 5, total = 5, stunned = 0;
     
     public static int animalcheck = 0;
 
@@ -75,15 +75,6 @@ public class FirstPersonController_Script : MonoBehaviour
             Health = Healthmax;
             Healthbar.localScale = new Vector3(1,1,1);
 
-        }
-        
-        if (speedboost < 0)
-        {
-            if (Input.GetKey(KeyCode.Q))
-            {
-                speedboostbar.localScale = new Vector3(0,0,0);
-            }
-           
         }
         
         
@@ -146,14 +137,20 @@ public class FirstPersonController_Script : MonoBehaviour
                 speedboostbar.localScale = new Vector3(0,0,0);;
                 Speedboostraise(-Time.deltaTime);
                 number += Time.deltaTime;
-             
             }
-
             if (stunned > 0)
             {
                 speed = 1;
                 stunned -= Time.deltaTime;
                 return;
+            }
+            if (speedboost <= 0)
+            {
+                if (Input.GetKey(KeyCode.Q))
+                {
+                    speedboostbar.localScale = new Vector3(0,0,0);
+                }
+           
             }
             if (Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.D)) 
             {
@@ -161,19 +158,16 @@ public class FirstPersonController_Script : MonoBehaviour
                 number -= Time.deltaTime;
                 return;
             }
-           
-            if (number < 10)
+            if (number < total)
             {
                 Speedboostraise(-Time.deltaTime);
                 number += Time.deltaTime;
             }
-            if (number > 10)
+            if (number > total)
             {
-                number = 10;
+                number = total;
             }
-
-          
-                     
+            
         }
         
         
@@ -192,7 +186,7 @@ public class FirstPersonController_Script : MonoBehaviour
         if ( heart != null)
         {
             Damage(-1);
-            Destroy(gameObject);
+            Destroy(other.gameObject);
         }
     }
     
