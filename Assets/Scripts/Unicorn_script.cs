@@ -8,8 +8,8 @@ public class Unicorn_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = new Vector3(3,3);
-        Invoke("selfdestruct",10);
+        rb.velocity = new Vector3(4,4);
+        Invoke("selfdestruct",15);
     }
 
     public void selfdestruct()

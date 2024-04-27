@@ -174,10 +174,11 @@ public class FirstPersonController_Script : MonoBehaviour
 
     public void OnCollisionEnter(Collision other)
     {
-        // trial_script trail = other.gameObject.GetComponent<trial_script>();
-        // if ( trail != null)
-        // {
-        //     Damage(.2f);
-        // }
+        bee_script bee = other.gameObject.GetComponent<bee_script>();
+        if ( bee != null)
+        {
+            Damage(1);
+            other.rigidbody.AddForce(transform.forward * 15, ForceMode.Impulse);
+        }
     }
 }
