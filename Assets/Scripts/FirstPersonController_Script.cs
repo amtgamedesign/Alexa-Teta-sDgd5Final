@@ -20,7 +20,7 @@ public class FirstPersonController_Script : MonoBehaviour
     public float speedboost = 10;
     public float speedboostmax = 10;
     public Transform speedboostbar;
-    public float number = 10;
+    public float number = 10, stunned = 0;
     
     public static int animalcheck = 0;
 
@@ -68,8 +68,8 @@ public class FirstPersonController_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //speed = 0
         
-        //speed = 0;
         if (Health <= 0)
         {
             Health = Healthmax;
@@ -77,7 +77,7 @@ public class FirstPersonController_Script : MonoBehaviour
 
         }
         
-        if (speedboost <= 10)
+        if (speedboost < 0)
         {
             if (Input.GetKey(KeyCode.Q))
             {
@@ -142,19 +142,26 @@ public class FirstPersonController_Script : MonoBehaviour
             
             if (number <= 0)
             {
+                stunned = 3f;
                 speedboostbar.localScale = new Vector3(0,0,0);;
-                speed = 1;
                 Speedboostraise(-Time.deltaTime);
                 number += Time.deltaTime;
              
             }
-            if (Input.GetKey(KeyCode.Q) && speed > 0)
+
+            if (stunned > 0)
+            {
+                speed = 1;
+                stunned -= Time.deltaTime;
+                return;
+            }
+            if (Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.D)) 
             {
                 Speedboostleft(Time.deltaTime);
                 number -= Time.deltaTime;
                 return;
             }
-           // speed = extraboost;
+           
             if (number < 10)
             {
                 Speedboostraise(-Time.deltaTime);
@@ -180,5 +187,13 @@ public class FirstPersonController_Script : MonoBehaviour
             Damage(1);
             other.rigidbody.AddForce(transform.forward * 15, ForceMode.Impulse);
         }
+        
+        heart_script heart = other.gameObject.GetComponent<heart_script>();
+        if ( heart != null)
+        {
+            Damage(-1);
+            Destroy(gameObject);
+        }
     }
+    
 }
