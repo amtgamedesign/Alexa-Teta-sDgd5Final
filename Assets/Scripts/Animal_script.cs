@@ -78,7 +78,7 @@ public class Animal_script : MonoBehaviour
                     Destroy(gameObject);
                 }
 
-                if (spawnthings == 10)
+                if (spawnthings == 10 || spawnthings == 2)
                 {
                     Instantiate(heart, transform.position, Quaternion.identity);
                     Destroy(gameObject);
