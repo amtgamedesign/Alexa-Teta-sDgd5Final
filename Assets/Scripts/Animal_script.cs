@@ -13,7 +13,7 @@ public class Animal_script : MonoBehaviour
     public Animal_script Animals;
     public Material Wrongchoice;
     public MeshRenderer mr;
-    public GameObject spiders, unicorn, bees, heart;
+    public GameObject spiders, unicorn, bees, heart, tinyhousepf;
     public Material startcolor;
     public int spawnthings;
     //private float number1 = 5.5f,number2 = 6.5f;
@@ -81,6 +81,12 @@ public class Animal_script : MonoBehaviour
                 if (spawnthings == 10 || spawnthings == 2)
                 {
                     Instantiate(heart, transform.position, Quaternion.identity);
+                    Destroy(gameObject);
+                }
+                
+                if (spawnthings == 1)
+                {
+                    Instantiate(tinyhousepf, new Vector3(transform.position.x,transform.position.y + 0.5f,transform.position.z), Quaternion.identity);
                     Destroy(gameObject);
                 }
                 

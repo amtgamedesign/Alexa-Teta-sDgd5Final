@@ -20,7 +20,8 @@ public class FirstPersonController_Script : MonoBehaviour
     public float speedboost = 10;
     public float speedboostmax = 10;
     public Transform speedboostbar;
-    public float number = 5, total = 5, stunned = 0;
+    public float number = 5, total = 5, stunned = 0, rocktotal = 5;
+    public TextMeshProUGUI rocktext;
     
     public static int animalcheck = 0;
 
@@ -63,12 +64,17 @@ public class FirstPersonController_Script : MonoBehaviour
         speed = 10;
     }
     
-   
+    public void updaterocks()
+    {
+        rocktext.text =  rocktotal.ToString("") + " Rocks";
+    }
+
     
     // Update is called once per frame
     void Update()
     {
         //speed = 0
+        updaterocks();
         
         if (Health <= 0)
         {
@@ -84,10 +90,11 @@ public class FirstPersonController_Script : MonoBehaviour
         float yMouse = Input.GetAxis("Mouse Y") * Mousespeed;
         Eyes.transform.Rotate(-yMouse,0,0);
         
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && rocktotal > 0)
         {
             //Spawn a projectile right in front of my eyes
             Instantiate(ProjectilePrefab, Eyes.transform.position + Eyes.transform.forward, Eyes.transform.rotation);
+            rocktotal--;
 
             if (Physics.Raycast(Eyes.transform.position, Eyes.transform.forward, out RaycastHit hit, 25))
             {
@@ -179,13 +186,27 @@ public class FirstPersonController_Script : MonoBehaviour
         if ( bee != null)
         {
             Damage(1);
-            other.rigidbody.AddForce(transform.forward * 15, ForceMode.Impulse);
+            other.rigidbody.AddForce(transform.forward * 12, ForceMode.Impulse);
+        }
+        
+        spider_script spider = other.gameObject.GetComponent<spider_script>();
+        if ( spider != null)
+        {
+            Damage(1);
+            other.rigidbody.AddForce(transform.forward * 6, ForceMode.Impulse);
         }
         
         heart_script heart = other.gameObject.GetComponent<heart_script>();
         if ( heart != null)
         {
             Damage(-1);
+            Destroy(other.gameObject);
+        }
+        
+        rock_script rock = other.gameObject.GetComponent<rock_script>();
+        if ( rock != null)
+        {
+            rocktotal++;
             Destroy(other.gameObject);
         }
     }
