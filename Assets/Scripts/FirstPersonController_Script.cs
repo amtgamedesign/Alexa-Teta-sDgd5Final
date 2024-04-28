@@ -1,8 +1,9 @@
-using System;
+
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+
 
 public class FirstPersonController_Script : MonoBehaviour
 {
@@ -67,6 +68,11 @@ public class FirstPersonController_Script : MonoBehaviour
     public void updaterocks()
     {
         rocktext.text =  rocktotal.ToString("") + " Rocks";
+    }
+
+    public void rocks(int amt)
+    {
+        rocktotal += amt;
     }
 
     
@@ -193,7 +199,7 @@ public class FirstPersonController_Script : MonoBehaviour
         if ( spider != null)
         {
             Damage(1);
-            other.rigidbody.AddForce(transform.forward * 6, ForceMode.Impulse);
+            other.rigidbody.AddForce(transform.forward * 10, ForceMode.Impulse);
         }
         
         heart_script heart = other.gameObject.GetComponent<heart_script>();
@@ -206,7 +212,7 @@ public class FirstPersonController_Script : MonoBehaviour
         rock_script rock = other.gameObject.GetComponent<rock_script>();
         if ( rock != null)
         {
-            rocktotal++;
+            rocks(Random.Range(1,5));
             Destroy(other.gameObject);
         }
     }

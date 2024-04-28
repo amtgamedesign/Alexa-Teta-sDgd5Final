@@ -111,5 +111,11 @@ public class Animal_script : MonoBehaviour
             transform.position = new Vector3(Random.Range(-60f,45f), 1.5f,Random.Range(20f,100f));
         }
         
+        rock_script rock = other.gameObject.GetComponent<rock_script>();
+        if (rock != null)
+        {
+            other.transform.position = new Vector3(Random.Range(-60f,45f), 1.5f,Random.Range(20f,100f));
+        }
+        
     }
 }

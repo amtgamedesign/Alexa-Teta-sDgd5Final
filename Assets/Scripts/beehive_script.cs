@@ -10,6 +10,7 @@ public class beehive_script : MonoBehaviour
     public float SpawnTime;
     public int hivehealth = 3;
     public GameObject SpawnedObject;
+    
 
     void Start()
     {
