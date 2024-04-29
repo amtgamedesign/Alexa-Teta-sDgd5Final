@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: 423515a7bdab3ba419977d5ae8493382
+  - enabled: 1
+    path: Assets/Scenes/Witch scene.unity
+    guid: 195ae5a47064dce41adffebe0e4f06ff
   m_configObjects: {}

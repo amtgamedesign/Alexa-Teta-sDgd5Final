@@ -22,7 +22,7 @@ public class next_room_script : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                SceneManager.LoadScene("Main Game");
+                SceneManager.LoadScene("Witch scene");
             }
             instr.text = "Press E to Go outside";
         }

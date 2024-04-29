@@ -31,6 +31,7 @@ public class Note_script : MonoBehaviour
                 Instructions.text = "";
                 door_script.notegone = true;
                 Destroy(gameObject);
+                door_script.notegone = true;
             }
             
         }
