@@ -34,7 +34,7 @@ public class Animal_script : MonoBehaviour
        // rb.velocity = new Vector3(Random.Range(Random.Range(-number2,-number1),Random.Range(number1,number2)),0,Random.Range(Random.Range(-number2,-number1),Random.Range(number1,number2)));
         player = FindObjectOfType<FirstPersonController_Script>();
         transform.Rotate(0,Random.Range(0,359),0);
-        spawnthings = Random.Range(1,10);
+        spawnthings = Random.Range(1,12);
         //Instructions = FindObjectOfType<TextMeshProUGUI>();
         // mr.material.color = new Color(Random.Range(0.0f,1.0f),Random.Range(0.0f,1.0f), Random.Range(0.0f,1.0f));
 
@@ -84,7 +84,7 @@ public class Animal_script : MonoBehaviour
                     Destroy(gameObject);
                 }
                 
-                if (spawnthings == 1)
+                if (spawnthings == 5)
                 {
                     Instantiate(tinyhousepf, new Vector3(transform.position.x,transform.position.y + 0.5f,transform.position.z), Quaternion.identity);
                     Destroy(gameObject);

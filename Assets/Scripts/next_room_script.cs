@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class next_room_script : MonoBehaviour
 {
-    public FirstPersonController_Script player;
+    public CutscenePlayer player;
 
     public TextMeshProUGUI instr;
     // Start is called before the first frame update

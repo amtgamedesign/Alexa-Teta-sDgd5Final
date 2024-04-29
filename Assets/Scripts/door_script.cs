@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class door_script : MonoBehaviour
 {
-    public FirstPersonController_Script player;
+    public CutscenePlayer player;
     public TextMeshProUGUI Instructions;
     public bool text;
     public Vector3 doorchange;
