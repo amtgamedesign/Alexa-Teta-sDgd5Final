@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class FirstPersonController_Script : MonoBehaviour
@@ -84,9 +85,9 @@ public class FirstPersonController_Script : MonoBehaviour
         
         if (Health <= 0)
         {
+            SceneManager.LoadScene("Main Game");
             Health = Healthmax;
             Healthbar.localScale = new Vector3(1,1,1);
-
         }
         
         

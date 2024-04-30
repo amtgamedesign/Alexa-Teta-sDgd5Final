@@ -1534,15 +1534,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: a
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d97249c56f2526146b1b3be84f61dcbf, type: 2}
+  m_sharedMaterial: {fileID: 46733995544360633, guid: d97249c56f2526146b1b3be84f61dcbf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4279374427
+  m_fontColor: {r: 0.3584906, g: 0.07237451, b: 0.07237451, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2281,7 +2281,7 @@ GameObject:
   - component: {fileID: 788943339}
   - component: {fileID: 788943338}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3430,7 +3430,7 @@ GameObject:
   - component: {fileID: 1075065053}
   - component: {fileID: 1075065052}
   m_Layer: 5
-  m_Name: Rocks
+  m_Name: Rocks Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3452,8 +3452,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -639, y: -445}
-  m_SizeDelta: {x: 594.3742, y: 130.4915}
+  m_AnchoredPosition: {x: -707.7991, y: -425.674}
+  m_SizeDelta: {x: 346.7761, y: 91.8395}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075065052
 MonoBehaviour:

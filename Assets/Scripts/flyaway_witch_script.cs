@@ -9,7 +9,7 @@ public class flyaway_witch_script : MonoBehaviour
     void Start()
     {
         Invoke("speed", 2);
-        Invoke("selfdestruct", 7);
+        Invoke("selfdestruct", 6);
     }
 
     public void speed()

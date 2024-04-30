@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI countdown;
-    private float endtimer = 180;
+    private float endtimer = 60;
 
     public GameObject[] animals;
 
@@ -72,10 +72,7 @@ public class GameManager : MonoBehaviour
         //This script uses a array to randomly pick from a select number of prefabs
         Instantiate(princeprefabs[UnityEngine.Random.Range(0, princeprefabs.Length )],new Vector3(Random.Range(-60f,45f),yspawn,Random.Range(20f,100f)), Quaternion.identity);
 
-        if (endtimer <= 0)
-        {
-            SceneManager.LoadScene("Flyer Scene");
-        }
+       
         
     }
     
@@ -85,6 +82,11 @@ public class GameManager : MonoBehaviour
     {
         updatetimer();
         endtimer -= Time.deltaTime;
+        
+        if (endtimer <= 0)
+        {
+            SceneManager.LoadScene("Main Game");
+        }
     }
 
     public void updatetimer()
