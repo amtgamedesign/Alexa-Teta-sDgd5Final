@@ -107,6 +107,7 @@ MonoBehaviour:
   bees: {fileID: 8397680741694258980, guid: e5a925ac2295d9b42aa72a8663355c60, type: 3}
   heart: {fileID: 7873230822452246629, guid: a1f2f6389ae5bd94d9ecb880a2f8a79c, type: 3}
   tinyhousepf: {fileID: 6310535587437535933, guid: e4859e42c10e3f74d9f7dd1b02055af4, type: 3}
+  witch: {fileID: 0}
   startcolor: {fileID: 0}
   spawnthings: 0
   checkedanimal: 0
@@ -156,8 +157,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6959551, y: 0.09311122, z: 1.1851346}
-  m_Center: {x: 0, y: 0.045143217, z: -0.33128154}
+  m_Size: {x: 0.6959551, y: 0.91367537, z: 1.1851346}
+  m_Center: {x: 0, y: 0.4554252, z: -0.33128154}
 --- !u!1 &8625141562037526241
 GameObject:
   m_ObjectHideFlags: 0

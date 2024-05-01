@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class FirstPersonController_Script : MonoBehaviour
 {
+    public static FirstPersonController_Script player;
     public Rigidbody RB;
     public float speed;
     public float extraboost;
