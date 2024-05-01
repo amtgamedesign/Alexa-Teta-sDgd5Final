@@ -9073,7 +9073,6 @@ GameObject:
   - component: {fileID: 1663263541}
   - component: {fileID: 1663263540}
   - component: {fileID: 1663263539}
-  - component: {fileID: 1663263538}
   - component: {fileID: 1663263537}
   - component: {fileID: 1663263536}
   m_Layer: 0
@@ -9123,27 +9122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fwrb: {fileID: 1663263536}
---- !u!65 &1663263538
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663263535}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1663263539
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9193,7 +9171,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663263535}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2432090755550338912, guid: dffed6ec53a19ad4e8cb7638d11d0893, type: 3}
 --- !u!4 &1663263541
 Transform:
   m_ObjectHideFlags: 0
@@ -9202,13 +9180,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663263535}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7644, y: 2.96, z: 25.17}
-  m_LocalScale: {x: 3.1807632, y: 6.0717, z: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 1.7644, y: -0.08, z: 25.17}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &1666409349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6451340004940131962, guid: ee612942e9d74fe4baea785dfe2eaa52, type: 3}
