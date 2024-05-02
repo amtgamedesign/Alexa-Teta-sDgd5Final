@@ -19,7 +19,8 @@ public class bee_script : MonoBehaviour
     void FixedUpdate()
     {
         //  Add something so that the spiders do not come after you super fast 
-         transform.position = Vector3.MoveTowards(transform.position, new Vector3(body.transform.position.x,body.transform.position.y + 1.5f ,body.transform.position.z), Random.Range(.1f, .2f));
+        transform.position = Vector3.MoveTowards(transform.position,
+            new Vector3(body.transform.position.x, body.transform.position.y + Random.Range(4.2f,5.2f) ,body.transform.position.z), Random.Range(.1f, .2f));
          
     }
     

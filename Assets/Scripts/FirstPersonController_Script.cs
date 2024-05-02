@@ -16,8 +16,8 @@ public class FirstPersonController_Script : MonoBehaviour
     public Camera Eyes;
     public Proj_script ProjectilePrefab;
     
-    public float Health = 10;
-    public float Healthmax = 10;
+    public float Health = 12;
+    public float Healthmax = 12;
     public Transform Healthbar;
     
     public float speedboost = 10;
@@ -205,7 +205,7 @@ public class FirstPersonController_Script : MonoBehaviour
         }
         
         heart_script heart = other.gameObject.GetComponent<heart_script>();
-        if ( heart != null)
+        if ( heart != null && Health < 12)
         {
             Damage(-1);
             Destroy(other.gameObject);
@@ -214,7 +214,7 @@ public class FirstPersonController_Script : MonoBehaviour
         rock_script rock = other.gameObject.GetComponent<rock_script>();
         if ( rock != null)
         {
-            rocks(Random.Range(1,5));
+            rocks(Random.Range(3,5));
             Destroy(other.gameObject);
         }
     }
