@@ -18,7 +18,7 @@ public class Animal_script : MonoBehaviour
     public Material startcolor;
     public int spawnthings;
     //private float number1 = 5.5f,number2 = 6.5f;
-    public bool checkedanimal = false;
+    public bool checkedanimal = false, Reverse, textbool = true;
     public static bool spawnunicorn = false, spawnwitch = false;
     public TextMeshPro Instructions;
    
@@ -48,15 +48,21 @@ public class Animal_script : MonoBehaviour
         if (Vector3.Distance(FirstPersonController_Script.player.transform.position, transform.position) < 10)
         {
            // rb.velocity = new Vector3(0, 0,0);
-        Instructions.text = "help";
+           transform.LookAt(FirstPersonController_Script.player.transform);
+           Vector3 rot = transform.rotation.eulerAngles;
+           if (Reverse == true)
+               transform.rotation = Quaternion.Euler(0,rot.y + 180,0);
+           else
+           {
+               transform.rotation = Quaternion.Euler(0,rot.y,0);
+           }
             
             if (Input.GetKeyDown(KeyCode.E) && checkedanimal == false)
             {
                 mr.material = Wrongchoice;
                 FirstPersonController_Script.player.Updateanimalcount(1);
-               Instructions.text = "";
                 checkedanimal = true;
-                
+                textbool = false;
                 
                 if (spawnthings == 3)
                 {
@@ -95,8 +101,20 @@ public class Animal_script : MonoBehaviour
                     spawnwitch = true;
                   //  Instantiate(witch, new Vector3(transform.position.x,transform.position.y + 0.5f,transform.position.z), Quaternion.identity);
                 }
+                
+          
             }
-            
+
+            if (textbool == true)
+            {
+                Instructions.text = "Press E to Kiss";
+            }
+
+            if (textbool == false)
+            {
+                Instructions.text = "";
+            }    
+        
         }
         
             if (Vector3.Distance(FirstPersonController_Script.player.transform.position, transform.position) > 17)
