@@ -12,7 +12,7 @@ public class FirstPersonController_Script : MonoBehaviour
     public Rigidbody RB;
     public float speed;
     public float extraboost;
-    public float Mousespeed;
+    public float MouseSensitivity;
     public Camera Eyes;
     public Proj_script ProjectilePrefab;
     
@@ -91,12 +91,16 @@ public class FirstPersonController_Script : MonoBehaviour
             Healthbar.localScale = new Vector3(1,1,1);
         }
         
-        
-        float xMouse = Input.GetAxis("Mouse X") * Mousespeed;
-        transform.Rotate(0,xMouse,0);
-
-        float yMouse = Input.GetAxis("Mouse Y") * Mousespeed;
-        Eyes.transform.Rotate(-yMouse,0,0);
+        float xRot = Input.GetAxis("Mouse X") * MouseSensitivity;
+        float yRot = -Input.GetAxis("Mouse Y") * MouseSensitivity;
+        transform.Rotate(0,xRot,0);
+        Vector3 eRot = Eyes.transform.localRotation.eulerAngles;
+        eRot.x += yRot;
+        if (eRot.x < -180) eRot.x += 360;
+        if (eRot.x > 180) eRot.x -= 360;
+        eRot = new Vector3(Mathf.Clamp(eRot.x, -90, 90),0,0);
+        Eyes.transform.localRotation = Quaternion.Euler(eRot);
+    
         
         if (Input.GetMouseButtonDown(0) && rocktotal > 0)
         {

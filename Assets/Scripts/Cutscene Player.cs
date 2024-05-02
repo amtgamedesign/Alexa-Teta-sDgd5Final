@@ -6,7 +6,7 @@ public class CutscenePlayer : MonoBehaviour
 {
     public Camera Eyes;
     public Rigidbody RB;
-    public float Mousespeed = 3;
+    public float MouseSensitivity = 3;
     public float WalkSpeed = 10;
 
     void Start()
@@ -20,12 +20,16 @@ public class CutscenePlayer : MonoBehaviour
     {
         // float xMouse = Input.GetAxis("Mouse X") * Mousespeed;
         // transform.Rotate(0,xMouse,0);
-
-        float xMouse = Input.GetAxis("Mouse X") * Mousespeed;
-        transform.Rotate(0,xMouse,0);
-        
-        float yMouse = Input.GetAxis("Mouse Y") * Mousespeed;
-        Eyes.transform.Rotate(-yMouse,0,0);
+        float xRot = Input.GetAxis("Mouse X") * MouseSensitivity;
+        float yRot = -Input.GetAxis("Mouse Y") * MouseSensitivity;
+        transform.Rotate(0,xRot,0);
+        Vector3 eRot = Eyes.transform.localRotation.eulerAngles;
+        eRot.x += yRot;
+        if (eRot.x < -180) eRot.x += 360;
+        if (eRot.x > 180) eRot.x -= 360;
+        eRot = new Vector3(Mathf.Clamp(eRot.x, -90, 90),0,0);
+        Eyes.transform.localRotation = Quaternion.Euler(eRot);
+   
 
         if (WalkSpeed > 0)
         {

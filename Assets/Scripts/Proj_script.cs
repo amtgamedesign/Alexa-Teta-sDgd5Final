@@ -17,6 +17,7 @@ public class Proj_script : MonoBehaviour
         //When I spawn, I fly straight forwards at my Speed
         RB.velocity = transform.forward * Speed;
         Invoke("Selfdestruct", 7);
+        
 
     }
 

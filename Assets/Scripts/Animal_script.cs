@@ -20,7 +20,7 @@ public class Animal_script : MonoBehaviour
     //private float number1 = 5.5f,number2 = 6.5f;
     public bool checkedanimal = false;
     public static bool spawnunicorn = false, spawnwitch = false;
-    public TextMeshProUGUI Instructions;
+    public TextMeshPro Instructions;
    
  
     //public Material[] randomcolor;
@@ -36,7 +36,6 @@ public class Animal_script : MonoBehaviour
         FirstPersonController_Script.player = FindObjectOfType<FirstPersonController_Script>();
         transform.Rotate(0,Random.Range(0,359),0);
         spawnthings = Random.Range(1,12);
-        Instructions = FindObjectOfType<TextMeshProUGUI>();
         // mr.material.color = new Color(Random.Range(0.0f,1.0f),Random.Range(0.0f,1.0f), Random.Range(0.0f,1.0f));
 
     }
@@ -49,13 +48,13 @@ public class Animal_script : MonoBehaviour
         if (Vector3.Distance(FirstPersonController_Script.player.transform.position, transform.position) < 10)
         {
            // rb.velocity = new Vector3(0, 0,0);
-          Instructions.text = "help";
+        Instructions.text = "help";
             
             if (Input.GetKeyDown(KeyCode.E) && checkedanimal == false)
             {
                 mr.material = Wrongchoice;
                 FirstPersonController_Script.player.Updateanimalcount(1);
-              //  Instructions.text = "";
+               Instructions.text = "";
                 checkedanimal = true;
                 
                 
@@ -94,7 +93,7 @@ public class Animal_script : MonoBehaviour
                 if (spawnthings == 1 && spawnwitch == false)
                 {
                     spawnwitch = true;
-                    Instantiate(witch, new Vector3(transform.position.x,transform.position.y + 0.5f,transform.position.z), Quaternion.identity);
+                  //  Instantiate(witch, new Vector3(transform.position.x,transform.position.y + 0.5f,transform.position.z), Quaternion.identity);
                 }
             }
             
@@ -102,7 +101,7 @@ public class Animal_script : MonoBehaviour
         
             if (Vector3.Distance(FirstPersonController_Script.player.transform.position, transform.position) > 17)
             {
-             Instructions.text = "";
+            Instructions.text = "";
             }
         
         
