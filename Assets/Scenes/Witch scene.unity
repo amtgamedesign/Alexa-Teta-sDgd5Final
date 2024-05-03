@@ -10645,6 +10645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Witch_model
       objectReference: {fileID: 0}
+    - target: {fileID: 3893647659253351419, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18330cd957abe7d4c9ac7088ab53ac05, type: 2}
     - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6
