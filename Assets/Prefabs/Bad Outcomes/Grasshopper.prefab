@@ -146,8 +146,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a9f3843cc751f84da14425ba81b96ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Countdown: 3
-  JumpTime: 3
+  Countdown: 5
+  JumpTime: 5
+  jumppower: 4
   grb: {fileID: 1405561862030381205}
 --- !u!114 &4543068086514770358
 MonoBehaviour:

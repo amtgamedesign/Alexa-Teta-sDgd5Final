@@ -102,10 +102,16 @@ public class Animal_script : MonoBehaviour
                   //  Instantiate(witch, new Vector3(transform.position.x,transform.position.y + 0.5f,transform.position.z), Quaternion.identity);
                 }
                 
-                if (spawnthings == 1 && spawnwitch == false)
+                if (spawnthings == 11)
                 {
                     spawnwitch = true;
                     Instantiate(grasshopper,transform.position, Quaternion.identity);
+                    Destroy(gameObject);
+                }
+
+                if (spawnthings == 8 && spawnunicorn == true)
+                {
+//Instantiate(,transform.position, Quaternion.identity);
                 }
           
             }
