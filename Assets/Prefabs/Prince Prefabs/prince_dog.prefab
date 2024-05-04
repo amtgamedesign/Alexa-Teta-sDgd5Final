@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7ef15e940756e45835ce2b167eabf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Instructions: {fileID: 0}
+  Instructions: {fileID: 5940042205254824746}
   player: {fileID: 0}
   princelyprefab: {fileID: 6104980837138261033, guid: d6cf6a77457b04042b618cd4ef3d9129, type: 3}
-  reverse: 1
+  reverse: 0

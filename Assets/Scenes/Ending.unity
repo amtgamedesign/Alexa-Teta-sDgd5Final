@@ -7460,6 +7460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prince_model
       objectReference: {fileID: 0}
+    - target: {fileID: 6868836908206346293, guid: d6cf6a77457b04042b618cd4ef3d9129, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6913851252858240659, guid: d6cf6a77457b04042b618cd4ef3d9129, type: 3}
       propertyPath: m_LocalScale.y
       value: 190

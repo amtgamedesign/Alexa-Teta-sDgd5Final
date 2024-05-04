@@ -149,7 +149,7 @@ MonoBehaviour:
   Instructions: {fileID: 5847681421065617955}
   player: {fileID: 0}
   princelyprefab: {fileID: 6104980837138261033, guid: d6cf6a77457b04042b618cd4ef3d9129, type: 3}
-  reverse: 1
+  reverse: 0
 --- !u!1 &6436492995824946430
 GameObject:
   m_ObjectHideFlags: 0

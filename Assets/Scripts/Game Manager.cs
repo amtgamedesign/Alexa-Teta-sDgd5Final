@@ -8,8 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager GM;
-    public TextMeshProUGUI countdown;
-    private float endtimer = 60;
+    public static float endtimer = 0;
 
     public GameObject[] animals;
 
@@ -24,8 +23,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        updatetimer();
-        
         //Spawn the animals
         //Quad 1
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,90f),yspawn,Random.Range(70f,154f)), Quaternion.identity);
@@ -71,7 +68,7 @@ public class GameManager : MonoBehaviour
         
         //Spawn the prince
         //This script uses a array to randomly pick from a select number of prefabs
-        Instantiate(princeprefabs[UnityEngine.Random.Range(0, princeprefabs.Length )],new Vector3(Random.Range(-60f,45f),yspawn,Random.Range(20f,100f)), Quaternion.identity);
+        Instantiate(princeprefabs[UnityEngine.Random.Range(0, princeprefabs.Length )],new Vector3(Random.Range(-99f,99f),yspawn,Random.Range(12f,154f)), Quaternion.identity);
 
        
         
@@ -81,18 +78,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        updatetimer();
-        endtimer -= Time.deltaTime;
-        
-        if (endtimer <= 0)
-        {
-            SceneManager.LoadScene("Main Game");
-        }
+        endtimer += Time.deltaTime;
     }
 
-    public void updatetimer()
-    {
-        countdown.text = "Time Left: " + endtimer.ToString("######.");
-    }
+  
     
 }

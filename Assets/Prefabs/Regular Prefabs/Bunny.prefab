@@ -108,9 +108,12 @@ MonoBehaviour:
   heart: {fileID: 7873230822452246629, guid: a1f2f6389ae5bd94d9ecb880a2f8a79c, type: 3}
   tinyhousepf: {fileID: 6310535587437535933, guid: e4859e42c10e3f74d9f7dd1b02055af4, type: 3}
   witch: {fileID: 0}
+  grasshopper: {fileID: 4648728449802219800, guid: 48953e9a4de626d4fbabb257a3805cf8, type: 3}
   startcolor: {fileID: -4125471728267972529, guid: d1430603fe7325e4ab04fcabc595674a, type: 3}
   spawnthings: 0
   checkedanimal: 0
+  Reverse: 0
+  textbool: 1
   Instructions: {fileID: 9092590039708741716}
 --- !u!54 &1003419614089531274
 Rigidbody:
@@ -291,7 +294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: g
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

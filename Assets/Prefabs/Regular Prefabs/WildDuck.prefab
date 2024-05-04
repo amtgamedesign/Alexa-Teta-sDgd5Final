@@ -325,9 +325,12 @@ MonoBehaviour:
   heart: {fileID: 7873230822452246629, guid: a1f2f6389ae5bd94d9ecb880a2f8a79c, type: 3}
   tinyhousepf: {fileID: 6310535587437535933, guid: e4859e42c10e3f74d9f7dd1b02055af4, type: 3}
   witch: {fileID: 0}
+  grasshopper: {fileID: 4648728449802219800, guid: 48953e9a4de626d4fbabb257a3805cf8, type: 3}
   startcolor: {fileID: 0}
   spawnthings: 0
   checkedanimal: 0
+  Reverse: 0
+  textbool: 1
   Instructions: {fileID: 6385671952504216692}
 --- !u!65 &9146358446423038838
 BoxCollider:
