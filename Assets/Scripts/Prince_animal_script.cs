@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Prince_animal_script : MonoBehaviour
 {
-    public TextMeshProUGUI Instructions;
+    public TextMeshPro Instructions;
     public FirstPersonController_Script player;
     public GameObject princelyprefab;
     public bool reverse;
@@ -14,7 +14,7 @@ public class Prince_animal_script : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<FirstPersonController_Script>();
-        Instructions = FindObjectOfType<TextMeshProUGUI>();
+
     }
 
     // Update is called once per frame
