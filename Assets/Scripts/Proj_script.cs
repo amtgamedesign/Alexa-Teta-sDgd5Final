@@ -28,7 +28,7 @@ public class Proj_script : MonoBehaviour
         if (rb != null)
         {
             //I push them in the direction I'm flying with a power equal to my Knockback stat
-            rb.AddForce(RB.velocity.normalized * Knockback, ForceMode.Impulse);
+            //rb.AddForce(RB.velocity.normalized * Knockback, ForceMode.Impulse);
         }
 
         spider_script spider = other.gameObject.GetComponent<spider_script>();

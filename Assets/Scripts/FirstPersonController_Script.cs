@@ -221,6 +221,13 @@ public class FirstPersonController_Script : MonoBehaviour
             rocks(Random.Range(3,5));
             Destroy(other.gameObject);
         }
+        
+        respawn_witch_script witch = other.gameObject.GetComponent<respawn_witch_script>();
+        if (witch != null)
+        {
+           Damage(-3);
+           stunned = 2;
+        }
     }
     
 }

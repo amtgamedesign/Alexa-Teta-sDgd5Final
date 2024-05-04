@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager GM;
     public TextMeshProUGUI countdown;
     private float endtimer = 60;
 

@@ -7014,7 +7014,7 @@ MonoBehaviour:
   m_text: 'Enchanted Forest '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d8a53bebbc47124e9ebd4118c345429, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: a684ca67559cfad4985a42ff39eab5e7, type: 2}
+  m_sharedMaterial: {fileID: 3527162067629095573, guid: 6d8a53bebbc47124e9ebd4118c345429, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7103,7 +7103,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a684ca67559cfad4985a42ff39eab5e7, type: 2}
+  - {fileID: 3527162067629095573, guid: 6d8a53bebbc47124e9ebd4118c345429, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10713,6 +10713,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d25c08f18296af341acd90833b28d869, type: 2}
+    - target: {fileID: 5667070729942487708, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5732240857745395944, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.054
