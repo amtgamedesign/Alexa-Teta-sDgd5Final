@@ -8,6 +8,7 @@ public class Note_script : MonoBehaviour
     public CutscenePlayer player;
     public TextMeshPro Instructions;
     public bool text;
+    public GameObject thenote;
     
     // Start is called before the first frame update
     void Start()
@@ -30,9 +31,8 @@ public class Note_script : MonoBehaviour
             {
                 text = true;
                 Instructions.text = "";
-                door_script.notegone = true;
                 Destroy(gameObject);
-                door_script.notegone = true;
+                thenote.SetActive(true);
             }
             
         }

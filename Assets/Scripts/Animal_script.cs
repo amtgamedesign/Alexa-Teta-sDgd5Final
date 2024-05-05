@@ -12,23 +12,17 @@ public class Animal_script : MonoBehaviour
    // public TextMeshProUGUI Instructions;
    // public FirstPersonController_Script player;
     public Animal_script Animals;
-    public Material Wrongchoice;
     public MeshRenderer mr;
-    public GameObject spiders, unicorn, bees, heart, tinyhousepf, witch, grasshopper;
-    public Material startcolor;
+    public GameObject spiders, unicorn, bees, heart, tinyhousepf, witch, grasshopper, kiss;
     public int spawnthings;
-    //private float number1 = 5.5f,number2 = 6.5f;
     public bool checkedanimal = false, Reverse, textbool = true;
     public static bool spawnunicorn = false, spawnwitch = false;
     public TextMeshPro Instructions;
-   
+ 
  
     //public Material[] randomcolor;
     //public List<Material> Colors;
 
-    //Change movement!
-    
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -36,8 +30,7 @@ public class Animal_script : MonoBehaviour
         FirstPersonController_Script.player = FindObjectOfType<FirstPersonController_Script>();
         transform.Rotate(0,Random.Range(0,359),0);
         spawnthings = Random.Range(1,12);
-        // mr.material.color = new Color(Random.Range(0.0f,1.0f),Random.Range(0.0f,1.0f), Random.Range(0.0f,1.0f));
-
+      
     }
 
     // Update is called once per frame
@@ -59,10 +52,10 @@ public class Animal_script : MonoBehaviour
             
             if (Input.GetKeyDown(KeyCode.E) && checkedanimal == false)
             {
-                mr.material = Wrongchoice;
                 FirstPersonController_Script.player.Updateanimalcount(1);
                 checkedanimal = true;
                 textbool = false;
+               kiss.SetActive(true);
                 
                 if (spawnthings == 3)
                 {
