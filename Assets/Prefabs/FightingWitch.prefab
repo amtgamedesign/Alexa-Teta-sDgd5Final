@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdf76070ceb569a43a06e3259462deeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Reverse: 0
+  Reverse: 1
   spawningzlocations:
   - 30
   - 130

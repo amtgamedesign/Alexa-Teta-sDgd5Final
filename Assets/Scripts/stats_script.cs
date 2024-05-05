@@ -11,7 +11,7 @@ public class stats_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        time.text = "Found Prince in: " + GameManager.endtimer.ToString("####.##");
+        time.text = "Found Prince in: " + GameManager.endtimer.ToString("####.##") + " seconds";
         animalkissed.text = "Animals Kissed: " + FirstPersonController_Script.animalcheck;
     }
     

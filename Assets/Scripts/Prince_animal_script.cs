@@ -22,12 +22,12 @@ public class Prince_animal_script : MonoBehaviour
     {
         if (Vector3.Distance(player.transform.position, transform.position) < 10)
         {
-            if (textbool == true)
+            if (textbool == false)
             {
                 Instructions.text = "Press E to Kiss";
             }    
 
-            if (textbool == false)
+            if (textbool == true)
             {
                 Instructions.text = "";
             }     
@@ -50,7 +50,7 @@ public class Prince_animal_script : MonoBehaviour
         }
         else
         {
-            if (Vector3.Distance(player.transform.position, transform.position) > 17)
+            if (Vector3.Distance(player.transform.position, transform.position) > 12)
             {
                 Instructions.text = "";
             }

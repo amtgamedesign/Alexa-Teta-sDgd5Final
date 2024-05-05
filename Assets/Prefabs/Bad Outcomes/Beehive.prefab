@@ -602,8 +602,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Countdown: 0
-  SpawnTime: 6
-  hivehealth: 3
+  SpawnTime: 4.5
+  hivehealth: 5
   SpawnedObject: {fileID: 9175507415095874164, guid: 8cc2d3f966f48704694a95465986bab8, type: 3}
 --- !u!65 &4234114343219009486
 BoxCollider:

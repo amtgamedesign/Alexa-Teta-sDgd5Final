@@ -13,7 +13,7 @@ public class Animal_script : MonoBehaviour
    // public FirstPersonController_Script player;
     public Animal_script Animals;
     public MeshRenderer mr;
-    public GameObject spiders, unicorn, bees, heart, tinyhousepf, witch, grasshopper, kiss;
+    public GameObject spiders, unicorn, bees, heart, tinyhousepf, witch, grasshopper, kiss, snowman;
     public int spawnthings;
     public bool checkedanimal = false, Reverse, textbool = true;
     public static bool spawnunicorn = false, spawnwitch = false;
@@ -102,9 +102,10 @@ public class Animal_script : MonoBehaviour
                     Destroy(gameObject);
                 }
 
-                if (spawnthings == 8 && spawnunicorn == true)
+                if (spawnthings == 12)
                 {
-//Instantiate(,transform.position, Quaternion.identity);
+                Instantiate(snowman,transform.position, Quaternion.identity);
+                Destroy(gameObject);
                 }
           
             }
@@ -121,7 +122,7 @@ public class Animal_script : MonoBehaviour
         
         }
         
-            if (Vector3.Distance(FirstPersonController_Script.player.transform.position, transform.position) > 17)
+            if (Vector3.Distance(FirstPersonController_Script.player.transform.position, transform.position) > 13)
             {
             Instructions.text = "";
             }
@@ -134,6 +135,12 @@ public class Animal_script : MonoBehaviour
     {
         Animal_script ani = other.gameObject.GetComponent<Animal_script>();
         if (ani != null)
+        {
+            transform.position = new Vector3(Random.Range(-60f,45f), 1.5f,Random.Range(20f,100f));
+        }
+        
+        Prince_animal_script aprince = other.gameObject.GetComponent<Prince_animal_script>();
+        if (aprince != null)
         {
             transform.position = new Vector3(Random.Range(-60f,45f), 1.5f,Random.Range(20f,100f));
         }

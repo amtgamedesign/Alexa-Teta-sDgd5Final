@@ -205,7 +205,7 @@ public class FirstPersonController_Script : MonoBehaviour
         if ( spider != null)
         {
             Damage(1);
-            other.rigidbody.AddForce(transform.forward, ForceMode.Impulse);
+            other.rigidbody.AddForce(transform.forward * 1.2f, ForceMode.Impulse);
         }
         
         heart_script heart = other.gameObject.GetComponent<heart_script>();

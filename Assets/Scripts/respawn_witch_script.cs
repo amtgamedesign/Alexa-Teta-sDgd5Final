@@ -9,10 +9,11 @@ public class respawn_witch_script : MonoBehaviour
     public bool Reverse;
     public float[] spawningzlocations;
 
+
     public void Start()
     {
       Bounce_wall_script.wall = FindObjectOfType<Bounce_wall_script>();
-      body_script.body = FindObjectOfType<body_script>();
+     
     }
 
     // Update is called once per frame

@@ -327,6 +327,7 @@ MonoBehaviour:
   witch: {fileID: 0}
   grasshopper: {fileID: 4648728449802219800, guid: 48953e9a4de626d4fbabb257a3805cf8, type: 3}
   kiss: {fileID: 6740674641438910337}
+  snowman: {fileID: 5704165787402686183, guid: ebaefb69a1318cc46ae9f922a58572f9, type: 3}
   spawnthings: 0
   checkedanimal: 0
   Reverse: 0
@@ -397,7 +398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5084403490738599561
 Transform:
   m_ObjectHideFlags: 0
@@ -406,13 +407,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6740674641438910337}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.003, y: 0.791, z: 0.519}
-  m_LocalScale: {x: 0.091732495, y: 0.0745325, z: 0.5}
+  m_LocalRotation: {x: 0, y: 0.8660254, z: -0.5, w: 0}
+  m_LocalPosition: {x: -0.00346, y: 1.0134, z: 0.6355}
+  m_LocalScale: {x: 0.065000296, y: 0.0745325, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5124795002320558696}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 60, y: 180, z: 0}
 --- !u!33 &6399438077784503473
 MeshFilter:
   m_ObjectHideFlags: 0

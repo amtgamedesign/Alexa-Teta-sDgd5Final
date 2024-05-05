@@ -16,7 +16,7 @@ public class Proj_script : MonoBehaviour
     {
         //When I spawn, I fly straight forwards at my Speed
         RB.velocity = transform.forward * Speed;
-        Invoke("Selfdestruct", 7);
+        Invoke("Selfdestruct", 4);
         
 
     }
@@ -31,11 +31,6 @@ public class Proj_script : MonoBehaviour
             //rb.AddForce(RB.velocity.normalized * Knockback, ForceMode.Impulse);
         }
 
-        spider_script spider = other.gameObject.GetComponent<spider_script>();
-        if (spider != null)
-        {
-            Destroy(other.gameObject);
-        }
        
         bee_script bee = other.gameObject.GetComponent<bee_script>();
         if (bee != null)
