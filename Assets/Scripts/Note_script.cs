@@ -6,7 +6,7 @@ using UnityEngine;
 public class Note_script : MonoBehaviour
 {
     public CutscenePlayer player;
-    public TextMeshProUGUI Instructions;
+    public TextMeshPro Instructions;
     public bool text;
     
     // Start is called before the first frame update
@@ -18,11 +18,12 @@ public class Note_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(player.transform.position, transform.position) < 15)
+        if (Vector3.Distance(player.transform.position, transform.position) < 20)
         {
             if (text == false)
             {
-                Instructions.text = "Press E to read note";
+                Instructions.text = "       E to Interact" +
+                                    "   Press E to read note";
             }
             
             if (Input.GetKeyDown(KeyCode.E))
@@ -37,7 +38,7 @@ public class Note_script : MonoBehaviour
         }
         else
         {
-            if (Vector3.Distance(player.transform.position, transform.position) > 16) 
+            if (Vector3.Distance(player.transform.position, transform.position) > 23) 
             { Instructions.text = ""; }
         }
     }
