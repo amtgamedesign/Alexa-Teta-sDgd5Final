@@ -22,15 +22,7 @@ public class Prince_animal_script : MonoBehaviour
     {
         if (Vector3.Distance(player.transform.position, transform.position) < 10)
         {
-            if (textbool == false)
-            {
-                Instructions.text = "Press E to Kiss";
-            }    
-
-            if (textbool == true)
-            {
-                Instructions.text = "";
-            }     
+         
             
             transform.LookAt(FirstPersonController_Script.player.transform);
             Vector3 rot = transform.rotation.eulerAngles;
@@ -47,6 +39,16 @@ public class Prince_animal_script : MonoBehaviour
                 textbool = true;
                 Destroy(gameObject);   
             }
+            
+            if (textbool == true)
+            {
+                Instructions.text = "Press E to Kiss";
+            }
+
+            if (textbool == false)
+            {
+                Instructions.text = "";
+            } 
         }
         else
         {

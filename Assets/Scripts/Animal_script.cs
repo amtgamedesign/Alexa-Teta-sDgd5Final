@@ -30,7 +30,7 @@ public class Animal_script : MonoBehaviour
        // rb.velocity = new Vector3(Random.Range(Random.Range(-number2,-number1),Random.Range(number1,number2)),0,Random.Range(Random.Range(-number2,-number1),Random.Range(number1,number2)));
         FirstPersonController_Script.player = FindObjectOfType<FirstPersonController_Script>();
         transform.Rotate(0,Random.Range(0,359),0);
-        spawnthings = Random.Range(1,12);
+        spawnthings = Random.Range(1,14);
       
     }
 

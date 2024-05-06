@@ -11,7 +11,6 @@ public class FirstPersonController_Script : MonoBehaviour
     public static FirstPersonController_Script player;
     public Rigidbody RB;
     public float speed;
-    public float extraboost;
     public float MouseSensitivity;
     public Camera Eyes;
     public Proj_script ProjectilePrefab;
