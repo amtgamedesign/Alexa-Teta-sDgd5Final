@@ -10,7 +10,7 @@ public class beehive_script : MonoBehaviour
     public float SpawnTime;
     public int hivehealth = 3;
     public GameObject SpawnedObject;
-    
+
 
     void Start()
     {
@@ -20,6 +20,7 @@ public class beehive_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+   
         
         Countdown -= Time.deltaTime;
         //If Countdown hits 0, that means it's time to spawn the new object
@@ -40,6 +41,8 @@ public class beehive_script : MonoBehaviour
     public void Damage(int amt)
     {
         hivehealth -= amt;
+   
+
     }
 
     public void OnCollisionEnter(Collision other)

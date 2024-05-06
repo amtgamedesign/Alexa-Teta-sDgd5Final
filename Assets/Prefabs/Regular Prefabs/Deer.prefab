@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animals: {fileID: 0}
   mr: {fileID: 8092434748433319023}
+  wrongcolor: {fileID: -5744621664681488574, guid: 58adaf257e38ec54dbf60bf115ce9929, type: 3}
   spiders: {fileID: 7832922918660702177, guid: ce8d73ca93b445045bc9538eb61a821a, type: 3}
   unicorn: {fileID: 2921540615597744988, guid: 466b74cf9226f274abd6621939da0d88, type: 3}
   bees: {fileID: 8397680741694258980, guid: e5a925ac2295d9b42aa72a8663355c60, type: 3}

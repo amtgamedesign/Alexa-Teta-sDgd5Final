@@ -13,6 +13,7 @@ public class Animal_script : MonoBehaviour
    // public FirstPersonController_Script player;
     public Animal_script Animals;
     public MeshRenderer mr;
+    public Material wrongcolor;
     public GameObject spiders, unicorn, bees, heart, tinyhousepf, witch, grasshopper, kiss, snowman;
     public int spawnthings;
     public bool checkedanimal = false, Reverse, textbool = true;
@@ -56,6 +57,7 @@ public class Animal_script : MonoBehaviour
                 checkedanimal = true;
                 textbool = false;
                kiss.SetActive(true);
+               mr.material = wrongcolor;
                 
                 if (spawnthings == 3)
                 {

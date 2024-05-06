@@ -9,6 +9,8 @@ public class spider_script : MonoBehaviour
     public body_script body;
     public bool startchase = false;
     public int health;
+    public Material redcolor, coalcolor;
+    public MeshRenderer MR;
     
     // Start is called before the first frame update
     void Start()
@@ -29,7 +31,7 @@ public class spider_script : MonoBehaviour
     void FixedUpdate()
     {
         //Add something so that the spiders do not come after you super fast 
-
+        MR.material = coalcolor;
         if (startchase == true)
         {
             transform.position = Vector3.MoveTowards(transform.position, body.transform.position, Random.Range(.1f, .2f));
@@ -38,6 +40,7 @@ public class spider_script : MonoBehaviour
     public void Damage(int amt)
     {
        health -= amt;
+       MR.material = redcolor;
     }
     public void Chase()
     {

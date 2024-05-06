@@ -102,6 +102,9 @@ MonoBehaviour:
   body: {fileID: 0}
   startchase: 0
   health: 3
+  redcolor: {fileID: 2100000, guid: 768cba46aa108e64d89cfea9e08d8146, type: 2}
+  coalcolor: {fileID: -5744621664681488574, guid: 58adaf257e38ec54dbf60bf115ce9929, type: 3}
+  MR: {fileID: 7473339042317066820}
 --- !u!54 &8845790050848001669
 Rigidbody:
   m_ObjectHideFlags: 0
