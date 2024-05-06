@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -41,6 +42,16 @@ public class board_script : MonoBehaviour
         if (Vector3.Distance(player.transform.position, transform.position) > 16)
         {
             textint.text = "";
+        }
+    }
+
+    public void OnCollisionEnter(Collision other)
+    {
+        Proj_script proj = other.gameObject.GetComponent<Proj_script>();
+        if ( proj != null)
+        {
+            boardhealth--;
+            Destroy(other.gameObject);
         }
     }
 }

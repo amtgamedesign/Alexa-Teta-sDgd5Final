@@ -7,7 +7,7 @@ public class destroy_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("selfdestruct", 3);
+        Invoke("selfdestruct", 2);
     }
 
     public void selfdestruct()
