@@ -228,8 +228,16 @@ MonoBehaviour:
   - 30
   - 130
   health: 10
-  audiognome1: {fileID: 591623671624202373, guid: 6d6319185a7810941ad0453ce3c3a657, type: 3}
-  audiognome2: {fileID: 5964345814158500582, guid: d88fdde978fa62b4dab624764711452a, type: 3}
+  audiognome1: {fileID: 591623671624202373, guid: 2742ca5b5db91184594b487de77c1715, type: 3}
+  animals:
+  - {fileID: 6945757496434807296, guid: 7a877cf3dc47ea24b8db475aa6bfef06, type: 3}
+  - {fileID: 8625141562037526241, guid: 2f202962a57625640acaa4f8bc4941fa, type: 3}
+  - {fileID: 4695634871758627505, guid: 28493a298c58da34e8f020ea84624c81, type: 3}
+  - {fileID: 1234625351712175998, guid: 42ac77091beb94946b835bbd4e852820, type: 3}
+  - {fileID: 4791702782598847311, guid: 3123eb9cc10680e4aa8e0aab483a1db0, type: 3}
+  - {fileID: 2709588401448047728, guid: 86d015f1cb9bab247bb698149d152201, type: 3}
+  - {fileID: 6436492995824946430, guid: 66cf5452e3af89a4ea585e026676f6e6, type: 3}
+  - {fileID: 629991917415621251, guid: 3675a2ab78eae8e43a1c5ec4f8f236b9, type: 3}
 --- !u!65 &2120196074463335008
 BoxCollider:
   m_ObjectHideFlags: 0

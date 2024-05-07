@@ -2672,10 +2672,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "      Listen for the scream,\n         Find Your Prince!"
+  m_text: "         Listen for a Hint,\n         Find Your Prince!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2699,8 +2699,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23
-  m_fontSizeBase: 23
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2764,7 +2764,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2802,7 +2802,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.89, y: 4.47}
+  m_AnchoredPosition: {x: -4.83, y: 4.73}
   m_SizeDelta: {x: 26.5285, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &689218825
@@ -2814,7 +2814,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 689218821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c13ee6b7a026144d8473a3361a0d53b, type: 3}
+  m_Script: {fileID: 11500000, guid: 30775aea088437c48814cbcb3f02c0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &696140856
@@ -3187,87 +3187,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &751016038
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2120196074463335008, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3628144412951360575, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_Name
-      value: FightingWitch
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 45.90875
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 67.28878
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112369967427022469, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9091643039714435405, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9091643039714435405, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: audiognome1
-      value: 
-      objectReference: {fileID: 591623671624202373, guid: 2742ca5b5db91184594b487de77c1715, type: 3}
-    - target: {fileID: 9091643039714435405, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: audiognome2
-      value: 
-      objectReference: {fileID: 5964345814158500582, guid: d88fdde978fa62b4dab624764711452a, type: 3}
-    - target: {fileID: 9091643039714435405, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: spawningzlocations.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9091643039714435405, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
-      propertyPath: spawningzlocations.Array.data[2]
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8dd77ebb081b8404bb58105c4db3f35c, type: 3}
 --- !u!1 &762899798
 GameObject:
   m_ObjectHideFlags: 0
@@ -6638,9 +6557,9 @@ MonoBehaviour:
   - {fileID: 4695634871758627505, guid: 28493a298c58da34e8f020ea84624c81, type: 3}
   - {fileID: 1234625351712175998, guid: 42ac77091beb94946b835bbd4e852820, type: 3}
   - {fileID: 4791702782598847311, guid: 3123eb9cc10680e4aa8e0aab483a1db0, type: 3}
+  - {fileID: 2709588401448047728, guid: 86d015f1cb9bab247bb698149d152201, type: 3}
   - {fileID: 6436492995824946430, guid: 66cf5452e3af89a4ea585e026676f6e6, type: 3}
   - {fileID: 629991917415621251, guid: 3675a2ab78eae8e43a1c5ec4f8f236b9, type: 3}
-  - {fileID: 2709588401448047728, guid: 86d015f1cb9bab247bb698149d152201, type: 3}
   princeprefabs:
   - {fileID: 8625141562037526241, guid: 6665f5fbdab7912429432c214096b15d, type: 3}
   - {fileID: 4695634871758627505, guid: 487ee26bbc85e59499665f612183997b, type: 3}
@@ -9640,4 +9559,3 @@ SceneRoots:
   - {fileID: 1241204126}
   - {fileID: 1265126707}
   - {fileID: 689218824}
-  - {fileID: 751016038}

@@ -9,7 +9,7 @@ public class Prince_animal_script : MonoBehaviour
     public FirstPersonController_Script player;
     public GameObject princelyprefab, audiognome;
     public bool reverse, textbool;
-    private float countdown = 3, soundtime = 25;
+    private float countdown = 25, soundtime = 25;
     
     
     // Start is called before the first frame update
