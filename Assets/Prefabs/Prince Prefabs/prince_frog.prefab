@@ -150,7 +150,11 @@ MonoBehaviour:
   Instructions: {fileID: 9180228475543872425}
   player: {fileID: 0}
   princelyprefab: {fileID: 6104980837138261033, guid: d6cf6a77457b04042b618cd4ef3d9129, type: 3}
+  audiognome: {fileID: 591623671624202373, guid: 5100bb2d7dc084d4981816e16ca80308, type: 3}
   reverse: 0
+  textbool: 0
+  countdown: 4
+  soundtime: 0
 --- !u!1 &6476732166608727527
 GameObject:
   m_ObjectHideFlags: 0

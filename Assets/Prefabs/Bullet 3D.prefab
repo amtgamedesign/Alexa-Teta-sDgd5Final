@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 1472414963298994856}
   Speed: 50
+  audiognome: {fileID: 5964345814158500582, guid: d88fdde978fa62b4dab624764711452a, type: 3}
   Knockback: 10
 --- !u!135 &1973095284041565072
 SphereCollider:

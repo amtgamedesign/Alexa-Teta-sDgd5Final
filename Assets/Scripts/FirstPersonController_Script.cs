@@ -14,6 +14,9 @@ public class FirstPersonController_Script : MonoBehaviour
     public float MouseSensitivity;
     public Camera Eyes;
     public Proj_script ProjectilePrefab;
+    public AudioSource AS;
+    public AudioClip ouch, collect;
+    
     
     public float Health = 12;
     public float Healthmax = 12;
@@ -198,6 +201,7 @@ public class FirstPersonController_Script : MonoBehaviour
         {
             Damage(1);
             other.rigidbody.AddForce(transform.forward * 12, ForceMode.Impulse);
+            AS.PlayOneShot(ouch);
         }
         
         spider_script spider = other.gameObject.GetComponent<spider_script>();
@@ -205,13 +209,15 @@ public class FirstPersonController_Script : MonoBehaviour
         {
             Damage(1);
             other.rigidbody.AddForce(transform.forward * 1.2f, ForceMode.Impulse);
+            AS.PlayOneShot(ouch);
         }
         
         heart_script heart = other.gameObject.GetComponent<heart_script>();
-        if ( heart != null && Health < 12)
+        if ( heart != null && Health < 10)
         {
             Damage(-1);
             Destroy(other.gameObject);
+            AS.PlayOneShot(collect);
         }
         
         rock_script rock = other.gameObject.GetComponent<rock_script>();
@@ -219,6 +225,7 @@ public class FirstPersonController_Script : MonoBehaviour
         {
             rocks(Random.Range(3,5));
             Destroy(other.gameObject);
+            AS.PlayOneShot(collect);
         }
         
         respawn_witch_script witch = other.gameObject.GetComponent<respawn_witch_script>();
@@ -226,6 +233,7 @@ public class FirstPersonController_Script : MonoBehaviour
         {
            Damage(-3);
            stunned = 2;
+           AS.PlayOneShot(ouch);
         }
     }
     

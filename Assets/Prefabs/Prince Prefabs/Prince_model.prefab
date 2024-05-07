@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e2d294b38d58bb44a9840282d7a01ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audiognome: {fileID: 591623671624202373, guid: 85c318f0dfbdf2d4eb202f82b536c6df, type: 3}
 --- !u!114 &6868836908206346293
 MonoBehaviour:
   m_ObjectHideFlags: 0

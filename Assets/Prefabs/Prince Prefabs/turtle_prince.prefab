@@ -33,7 +33,8 @@ Transform:
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 652105127446923117}
   m_Father: {fileID: 889509248188909285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7958479185886092212
@@ -149,7 +150,11 @@ MonoBehaviour:
   Instructions: {fileID: 5847681421065617955}
   player: {fileID: 0}
   princelyprefab: {fileID: 6104980837138261033, guid: d6cf6a77457b04042b618cd4ef3d9129, type: 3}
+  audiognome: {fileID: 591623671624202373, guid: 5100bb2d7dc084d4981816e16ca80308, type: 3}
   reverse: 0
+  textbool: 0
+  countdown: 4
+  soundtime: 0
 --- !u!1 &6436492995824946430
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +184,6 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 652105127446923117}
   - {fileID: 3251624692907782785}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -209,12 +213,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6481579605287410514}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.36633334}
   m_LocalScale: {x: 2.3333335, y: 2.3333335, z: 2.3333335}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 889509248188909285}
+  m_Father: {fileID: 3251624692907782785}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

@@ -7,8 +7,10 @@ public class Prince_animal_script : MonoBehaviour
 {
     public TextMeshPro Instructions;
     public FirstPersonController_Script player;
-    public GameObject princelyprefab;
+    public GameObject princelyprefab, audiognome;
     public bool reverse, textbool;
+    private float countdown = 20, soundtime = 20;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,13 @@ public class Prince_animal_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        countdown -= Time.deltaTime;
+        if (countdown <= 0)
+        {
+            Instantiate(audiognome, transform.position, Quaternion.identity);
+            countdown = soundtime;
+        }
+        
         if (Vector3.Distance(player.transform.position, transform.position) < 10)
         {
          

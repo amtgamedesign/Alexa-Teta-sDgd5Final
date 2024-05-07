@@ -8,7 +8,8 @@ public class Proj_script : MonoBehaviour
 
     //How fast do I fly?
     public float Speed = 30;
-
+    public GameObject audiognome;
+    
     //How hard do I knockback things I hit?
     public float Knockback = 10;
 
@@ -16,7 +17,7 @@ public class Proj_script : MonoBehaviour
     {
         //When I spawn, I fly straight forwards at my Speed
         RB.velocity = transform.forward * Speed;
-        Invoke("Selfdestruct", 4);
+        Invoke("Selfdestruct", 5);
         
 
     }
@@ -36,6 +37,7 @@ public class Proj_script : MonoBehaviour
         if (bee != null)
         {
             Destroy(other.gameObject);
+            Instantiate(audiognome, transform.position, Quaternion.identity);
         }
         
         

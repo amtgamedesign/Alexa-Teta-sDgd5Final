@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Prince_script : MonoBehaviour
 {
-    
+    public GameObject audiognome;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        Instantiate(audiognome, transform.position, Quaternion.identity);
     }
 
     // Update is called once per frame

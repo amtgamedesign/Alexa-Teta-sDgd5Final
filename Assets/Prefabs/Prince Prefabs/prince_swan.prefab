@@ -196,7 +196,7 @@ Transform:
   m_GameObject: {fileID: 2709588401448047728}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.01, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -367,4 +367,8 @@ MonoBehaviour:
   Instructions: {fileID: 4970419560982488297}
   player: {fileID: 0}
   princelyprefab: {fileID: 6104980837138261033, guid: d6cf6a77457b04042b618cd4ef3d9129, type: 3}
+  audiognome: {fileID: 591623671624202373, guid: 5100bb2d7dc084d4981816e16ca80308, type: 3}
   reverse: 0
+  textbool: 0
+  countdown: 4
+  soundtime: 0

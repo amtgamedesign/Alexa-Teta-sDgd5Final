@@ -14,7 +14,7 @@ public class Animal_script : MonoBehaviour
     public Animal_script Animals;
     public MeshRenderer mr;
     public Material wrongcolor;
-    public GameObject spiders, unicorn, bees, heart, tinyhousepf, witch, grasshopper, kiss, snowman;
+    public GameObject spiders, unicorn, bees, heart, tinyhousepf, witch, grasshopper, kiss, snowman, audiognome;
     public int spawnthings;
     public bool checkedanimal = false, Reverse, textbool = true;
     public static bool spawnunicorn = false, spawnwitch = false;
@@ -58,6 +58,7 @@ public class Animal_script : MonoBehaviour
                 textbool = false;
                kiss.SetActive(true);
                mr.material = wrongcolor;
+               Instantiate(audiognome, transform.position, Quaternion.identity);
                 
                 if (spawnthings == 3)
                 {
@@ -78,7 +79,7 @@ public class Animal_script : MonoBehaviour
                     Destroy(gameObject);
                 }
 
-                if (spawnthings == 10 || spawnthings == 2)
+                if (spawnthings == 2)
                 {
                     Instantiate(heart, transform.position, Quaternion.identity);
                     Destroy(gameObject);

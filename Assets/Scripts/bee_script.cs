@@ -5,7 +5,7 @@ using UnityEngine;
 public class bee_script : MonoBehaviour
 {
     public body_script body;
-  
+   
     
     // Start is called before the first frame update
     void Start()

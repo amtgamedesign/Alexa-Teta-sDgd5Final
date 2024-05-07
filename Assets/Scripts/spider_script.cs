@@ -11,6 +11,7 @@ public class spider_script : MonoBehaviour
     public int health;
     public Material redcolor, coalcolor;
     public MeshRenderer MR;
+    public GameObject audiognome;
     
     // Start is called before the first frame update
     void Start()
@@ -53,6 +54,7 @@ public class spider_script : MonoBehaviour
         if (proj != null)
         {
             Damage(1);
+            Instantiate(audiognome, transform.position, Quaternion.identity);
         }
 
     }

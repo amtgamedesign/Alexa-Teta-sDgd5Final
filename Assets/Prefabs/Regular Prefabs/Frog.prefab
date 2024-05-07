@@ -112,6 +112,7 @@ MonoBehaviour:
   grasshopper: {fileID: 4648728449802219800, guid: 48953e9a4de626d4fbabb257a3805cf8, type: 3}
   kiss: {fileID: 6472273128757546685}
   snowman: {fileID: 5704165787402686183, guid: ebaefb69a1318cc46ae9f922a58572f9, type: 3}
+  audiognome: {fileID: 591623671624202373, guid: 471fa3663cf24a848a4e4460e059470d, type: 3}
   spawnthings: 0
   checkedanimal: 0
   Reverse: 0

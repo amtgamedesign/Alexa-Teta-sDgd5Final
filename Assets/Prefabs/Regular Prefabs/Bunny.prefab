@@ -112,6 +112,7 @@ MonoBehaviour:
   grasshopper: {fileID: 4648728449802219800, guid: 48953e9a4de626d4fbabb257a3805cf8, type: 3}
   kiss: {fileID: 6221899682742141999}
   snowman: {fileID: 5704165787402686183, guid: ebaefb69a1318cc46ae9f922a58572f9, type: 3}
+  audiognome: {fileID: 591623671624202373, guid: 471fa3663cf24a848a4e4460e059470d, type: 3}
   spawnthings: 0
   checkedanimal: 0
   Reverse: 0
@@ -191,13 +192,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6221899682742141999}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.0007, y: 0.17099999, z: 0.109699994}
+  m_LocalRotation: {x: 0, y: 0.92387956, z: -0.38268343, w: 0}
+  m_LocalPosition: {x: -0.0007, y: 0.294, z: 0.153}
   m_LocalScale: {x: 0.05241856, y: 0.04259, z: 0.28571424}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3570009385196241509}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
 --- !u!33 &5269669880397234849
 MeshFilter:
   m_ObjectHideFlags: 0
