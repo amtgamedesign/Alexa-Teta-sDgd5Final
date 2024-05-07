@@ -9,17 +9,19 @@ public class respawn_witch_script : MonoBehaviour
     public bool Reverse;
     public float[] spawningzlocations;
     public int health = 10;
+    public GameObject audiognome1, audiognome2;
 
 
     public void Start()
     {
       Bounce_wall_script.wall = FindObjectOfType<Bounce_wall_script>();
-     
+      Instantiate(audiognome1, transform.position, Quaternion.identity);
     }
 
     // Update is called once per frame
     void Update()
     {
+        Physics.gravity = new Vector3(0,-15f,0);
         transform.LookAt(Bounce_wall_script.wall.transform);
         Vector3 rot = transform.rotation.eulerAngles;
         if (Reverse == true)
@@ -45,6 +47,20 @@ public class respawn_witch_script : MonoBehaviour
 
     public void OnCollisionEnter(Collision other)
     {
+        
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        Bounce_wall_script bwall = other.gameObject.GetComponent<Bounce_wall_script>();
+        if ( bwall != null)
+        {
+            transform.position = new Vector3(Random.Range(-99,90),2f, Random.Range(12,154));
+            //transform.position = Random.insideUnitSphere;
+            //Random.Range(0,spawningzlocations.Length)
+            Instantiate(audiognome1, transform.position, Quaternion.identity);
+        }
+        
         Animal_script ani = other.gameObject.GetComponent<Animal_script>();
         if (ani != null)
         {
@@ -55,16 +71,7 @@ public class respawn_witch_script : MonoBehaviour
         if (proj != null)
         {
             Destroy(other.gameObject);
-            
-        }
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        Bounce_wall_script bwall = other.gameObject.GetComponent<Bounce_wall_script>();
-        if ( bwall != null)
-        {
-            transform.position = new Vector3(Random.Range(-99,90),1f, Random.Range(0,spawningzlocations.Length));
+            Instantiate(audiognome2, transform.position, Quaternion.identity);
         }
         
     }

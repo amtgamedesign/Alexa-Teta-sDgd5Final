@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4593081036264356604}
   - component: {fileID: 5599964603291705428}
   m_Layer: 0
-  m_Name: audiodnomkiss 1
+  m_Name: audiowitch 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 5599964603291705428}
-  Sound: {fileID: 8300000, guid: 44a8b5105390acf43a9d79edb9c583a5, type: 3}
+  Sound: {fileID: 8300000, guid: 6403acc2ea2309c4d88bad5fbf4b05d9, type: 3}
 --- !u!82 &5599964603291705428
 AudioSource:
   m_ObjectHideFlags: 0
@@ -65,10 +65,10 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 142
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 1000
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -103,7 +103,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.298
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

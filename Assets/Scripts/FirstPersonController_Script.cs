@@ -1,9 +1,11 @@
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 
 public class FirstPersonController_Script : MonoBehaviour
@@ -230,13 +232,16 @@ public class FirstPersonController_Script : MonoBehaviour
             AS.PlayOneShot(collect);
         }
         
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
         respawn_witch_script witch = other.gameObject.GetComponent<respawn_witch_script>();
         if (witch != null)
         {
-           Damage(-3);
-           stunned = 2;
-           AS.PlayOneShot(ouch);
+            Damage(-3);
+            stunned = 2;
+            AS.PlayOneShot(ouch);
         }
     }
-    
 }

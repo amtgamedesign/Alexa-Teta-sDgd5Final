@@ -9,7 +9,7 @@ public class Prince_animal_script : MonoBehaviour
     public FirstPersonController_Script player;
     public GameObject princelyprefab, audiognome;
     public bool reverse, textbool;
-    private float countdown = 20, soundtime = 20;
+    private float countdown = 3, soundtime = 25;
     
     
     // Start is called before the first frame update
@@ -46,18 +46,15 @@ public class Prince_animal_script : MonoBehaviour
             {
                 Instantiate(princelyprefab, transform.position, Quaternion.identity);
                 textbool = true;
+                Invoke("textstop",.1f);
                 Destroy(gameObject);   
             }
             
-            if (textbool == true)
+            if (textbool == false)
             {
                 Instructions.text = "Press E to Kiss";
             }
-
-            if (textbool == false)
-            {
-                Instructions.text = "";
-            } 
+            
         }
         else
         {
@@ -66,5 +63,11 @@ public class Prince_animal_script : MonoBehaviour
                 Instructions.text = "";
             }
         }
+    }
+
+
+    public void textstop()
+    {
+        Instructions.text = "";
     }
 }

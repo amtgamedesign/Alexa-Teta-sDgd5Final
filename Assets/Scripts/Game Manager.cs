@@ -31,6 +31,10 @@ public class GameManager : MonoBehaviour
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,90f),yspawn,Random.Range(70f,154f)), Quaternion.identity);
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,90f),yspawn,Random.Range(70f,154f)), Quaternion.identity);
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,90f),yspawn,Random.Range(70f,154f)), Quaternion.identity);
+        Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,90f),yspawn,Random.Range(70f,154f)), Quaternion.identity);
+        Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,90f),yspawn,Random.Range(70f,154f)), Quaternion.identity);
+        Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,90f),yspawn,Random.Range(70f,154f)), Quaternion.identity);
+
         Instantiate(rock,new Vector3(Random.Range(6f,90f),yspawn,Random.Range(70f,154f)), Quaternion.identity);
         Instantiate(rock,new Vector3(Random.Range(6f,90f),yspawn,Random.Range(70f,154f)), Quaternion.identity);
         
@@ -40,6 +44,10 @@ public class GameManager : MonoBehaviour
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-90f,-6f),yspawn,Random.Range(70f,132f)), Quaternion.identity);
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-90f,-6f),yspawn,Random.Range(70f,132f)), Quaternion.identity);
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-90f,-6f),yspawn,Random.Range(70f,132f)), Quaternion.identity);
+        Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-90f,-6f),yspawn,Random.Range(70f,132f)), Quaternion.identity);
+        Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-90f,-6f),yspawn,Random.Range(70f,132f)), Quaternion.identity);
+        Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-90f,-6f),yspawn,Random.Range(70f,132f)), Quaternion.identity);
+
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-90f,-6f),yspawn,Random.Range(70f,132f)), Quaternion.identity);
         Instantiate(rock,new Vector3(Random.Range(-90f,-6f),yspawn,Random.Range(70f,132f)), Quaternion.identity);
         Instantiate(rock,new Vector3(Random.Range(-90f,-6f),yspawn,Random.Range(70f,132f)), Quaternion.identity);
@@ -51,6 +59,9 @@ public class GameManager : MonoBehaviour
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-99f,-6f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-99f,-6f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-99f,-6f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
+        Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-99f,-6f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
+        Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(-99f,-6f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
+       
         Instantiate(rock,new Vector3(Random.Range(-99f,-6f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
         Instantiate(rock,new Vector3(Random.Range(-99f,-6f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
 
@@ -61,6 +72,9 @@ public class GameManager : MonoBehaviour
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,99f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,99f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
         Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,99f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
+        Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,99f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
+        Instantiate(animals[UnityEngine.Random.Range(0, animals.Length )],new Vector3(Random.Range(6f,99f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
+       
         Instantiate(rock,new Vector3(Random.Range(6f,99f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
         Instantiate(rock,new Vector3(Random.Range(6f,99f),yspawn,Random.Range(12f,62f)), Quaternion.identity);
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4593081036264356604}
   - component: {fileID: 5599964603291705428}
   m_Layer: 0
-  m_Name: anompri_scream
+  m_Name: audioddundundun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 5599964603291705428}
-  Sound: {fileID: 8300000, guid: 0223ba0b182a2dd47b4f9a08bc7f85d9, type: 3}
+  Sound: {fileID: 8300000, guid: cf91d785f461e754691e16040d0c9cc5, type: 3}
 --- !u!82 &5599964603291705428
 AudioSource:
   m_ObjectHideFlags: 0
@@ -59,16 +59,16 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.923
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 131
-  DopplerLevel: 1.07
+  Priority: 128
+  DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 1000
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -103,7 +103,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.801
+      value: 0.298
       inSlope: 0
       outSlope: 0
       tangentMode: 0
