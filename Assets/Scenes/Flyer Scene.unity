@@ -2158,8 +2158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.9768, y: 61.239388}
-  m_SizeDelta: {x: 446.6492, y: 466.6325}
+  m_AnchoredPosition: {x: 6.1037, y: 15}
+  m_SizeDelta: {x: 639.63, y: 638.7999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &402413291
 CanvasRenderer:
@@ -2209,6 +2209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thenote: {fileID: 402413288}
+  audiognome: {fileID: 591623671624202373, guid: 2742ca5b5db91184594b487de77c1715, type: 3}
 --- !u!1 &403021606
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,7 +2455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use "WSAD" to Move
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -5164,6 +5165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1062947539}
   Instructions: {fileID: 607417794}
+  text1: {fileID: 1174504245}
   text: 0
   doorchange: {x: 19.6, y: 12.3784, z: 7.63}
   doorrotate: {x: 0, y: 90, z: 0}
@@ -5847,6 +5849,7 @@ GameObject:
   - component: {fileID: 1174504244}
   - component: {fileID: 1174504246}
   - component: {fileID: 1174504245}
+  - component: {fileID: 1174504247}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5893,7 +5896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Oh a letter on my door"'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 920ac7d4db47dc74eaf0bfee445db5a4, type: 2}
   m_sharedMaterial: {fileID: -5404794314699384128, guid: 920ac7d4db47dc74eaf0bfee445db5a4, type: 2}
@@ -5970,6 +5973,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174504243}
   m_CullTransparentMesh: 1
+--- !u!114 &1174504247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174504243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df601fe047fa16449ba0115fbae78d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text1: {fileID: 1174504245}
+  text2: {fileID: 477726475}
 --- !u!1 &1181540690
 GameObject:
   m_ObjectHideFlags: 0
@@ -6396,6 +6413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1062947539}
   Instructions: {fileID: 607417794}
+  text1: {fileID: 1174504245}
   text: 0
   doorchange: {x: -10.76, y: 12.5242, z: 7.59}
   doorrotate: {x: 0, y: 270, z: 0}

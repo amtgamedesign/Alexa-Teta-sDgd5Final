@@ -10,7 +10,7 @@ public class Audiognome_script : MonoBehaviour
     public void Start()
     {
         AS.PlayOneShot(Sound);
-        Invoke("selfdestruct", 3);
+        Invoke("selfdestruct", 5);
     }
 
     public void selfdestruct()

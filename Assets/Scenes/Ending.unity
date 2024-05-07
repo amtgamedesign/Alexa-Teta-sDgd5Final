@@ -2877,7 +2877,7 @@ GameObject:
   - component: {fileID: 389714759}
   - component: {fileID: 389714758}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: enemiesdefeated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4238,6 +4238,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 115616566}
+  - {fileID: 1767686491}
   m_Father: {fileID: 1983096549}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -10303,7 +10304,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767686490}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10311,11 +10312,11 @@ RectTransform:
   - {fileID: 374103406}
   - {fileID: 310510715}
   - {fileID: 389714757}
-  m_Father: {fileID: 1983096549}
+  m_Father: {fileID: 812088448}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -413.57, y: 153.79343}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 158.9975, y: -171.9566}
   m_SizeDelta: {x: 317.37, y: 241.2131}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767686492
@@ -11243,7 +11244,6 @@ RectTransform:
   m_Children:
   - {fileID: 1600216466}
   - {fileID: 812088448}
-  - {fileID: 1767686491}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -11265,6 +11265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: {fileID: 374103407}
   animalkissed: {fileID: 310510716}
+  enemiesdefeated: {fileID: 389714758}
 --- !u!1001 &2004334190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11801,6 +11802,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 1699419040}
   - {fileID: 665740135}
+  - {fileID: 1983096549}
+  - {fileID: 757887423}
   - {fileID: 1883668809}
   - {fileID: 887436390}
   - {fileID: 1514478640}
@@ -11829,6 +11832,4 @@ SceneRoots:
   - {fileID: 1565609820}
   - {fileID: 1361865907}
   - {fileID: 1706139412}
-  - {fileID: 1983096549}
-  - {fileID: 757887423}
   - {fileID: 262558278}

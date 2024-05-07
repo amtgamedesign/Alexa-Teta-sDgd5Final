@@ -16,6 +16,7 @@ public class FirstPersonController_Script : MonoBehaviour
     public Proj_script ProjectilePrefab;
     public AudioSource AS;
     public AudioClip ouch, collect;
+    public static int enemies;
     
     
     public float Health = 12;
@@ -202,6 +203,7 @@ public class FirstPersonController_Script : MonoBehaviour
             Damage(1);
             other.rigidbody.AddForce(transform.forward * 12, ForceMode.Impulse);
             AS.PlayOneShot(ouch);
+            enemies++;
         }
         
         spider_script spider = other.gameObject.GetComponent<spider_script>();

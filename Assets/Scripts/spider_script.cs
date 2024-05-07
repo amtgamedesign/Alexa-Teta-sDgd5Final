@@ -26,6 +26,7 @@ public class spider_script : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            FirstPersonController_Script.enemies++;
         }
     }
 

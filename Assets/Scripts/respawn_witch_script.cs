@@ -8,6 +8,7 @@ public class respawn_witch_script : MonoBehaviour
 {
     public bool Reverse;
     public float[] spawningzlocations;
+    public int health = 10;
 
 
     public void Start()
@@ -27,7 +28,12 @@ public class respawn_witch_script : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0,rot.y,0);
         }
-        
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+            
+        }
         
         
     }
@@ -49,6 +55,7 @@ public class respawn_witch_script : MonoBehaviour
         if (proj != null)
         {
             Destroy(other.gameObject);
+            
         }
     }
 

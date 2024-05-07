@@ -7,11 +7,17 @@ public class door_script : MonoBehaviour
 {
     public CutscenePlayer player;
     public TextMeshPro Instructions;
+    public TextMeshProUGUI text1;
     public bool text;
     public Vector3 doorchange;
     public Vector3 doorrotate;
     public static bool notegone = false;
     public bool textbool;
+
+    public void updatetext()
+    {
+        text1.text = "";
+    }
     
     // Update is called once per frame
     void Update()
@@ -32,6 +38,10 @@ public class door_script : MonoBehaviour
                     {
                         Instructions.text = "";
                     }
+
+                  text1.text = "\"I must save my love!\"";
+                  
+                  Invoke("updatetext",4);
                 }
 
                 if (Input.GetKeyDown(KeyCode.E))
