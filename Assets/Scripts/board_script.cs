@@ -29,7 +29,7 @@ public class board_script : MonoBehaviour
         {
             if (rockgone == false)
             {
-                textint.text = "Grab rocks to throw to destroy Stuctures and Enemies";
+                textint.text = "Grab rocks to destroy Stuctures and Enemies";
             }
 
             if (rockgone == true)

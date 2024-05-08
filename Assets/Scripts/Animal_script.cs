@@ -92,7 +92,7 @@ public class Animal_script : MonoBehaviour
                 }
 
                 //Possibly have a fight with the witch
-                if (spawnthings == 14)
+                if (spawnthings == 13)
                 {
                    Destroy(gameObject);
                   Instantiate(witch, new Vector3(transform.position.x,transform.position.y + 0.5f,transform.position.z), Quaternion.identity);

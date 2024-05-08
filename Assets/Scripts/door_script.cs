@@ -13,6 +13,7 @@ public class door_script : MonoBehaviour
     public Vector3 doorrotate;
     public static bool notegone = false;
     public bool textbool;
+    public GameObject audiognome;
 
     public void updatetext()
     {
@@ -32,6 +33,7 @@ public class door_script : MonoBehaviour
                     if (textbool == true)
                     {
                         Instructions.text = "Press E to open door";
+                       
                     }
 
                     if (textbool == false)
@@ -52,6 +54,7 @@ public class door_script : MonoBehaviour
                     text = true;
                     Instructions.text = "";
                     Destroy(Instructions);
+                    Instantiate(audiognome, transform.position, Quaternion.identity);
                 }
 
             }

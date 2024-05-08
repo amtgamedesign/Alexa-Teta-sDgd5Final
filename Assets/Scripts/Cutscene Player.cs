@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CutscenePlayer : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class CutscenePlayer : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.P))
+        {
+            SceneManager.LoadScene("Main Game");
+        }
+        
         // float xMouse = Input.GetAxis("Mouse X") * Mousespeed;
         // transform.Rotate(0,xMouse,0);
         float xRot = Input.GetAxis("Mouse X") * MouseSensitivity;

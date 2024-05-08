@@ -18,7 +18,7 @@ public class start_text_script : MonoBehaviour
 
     public void text0update()
     {
-        text1.text = "\"Oh a letter on my door\"";
+        text1.text = "\"Oh a letter is on my door\"";
     }
 
     public void text1update()

@@ -29,15 +29,15 @@ public class respawn_witch_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Physics.gravity = new Vector3(0,-15f,0);
-        // transform.LookAt(Bounce_wall_script.wall.transform);
-        // Vector3 rot = transform.rotation.eulerAngles;
-        // if (Reverse == true)
-        //     transform.rotation = Quaternion.Euler(0,rot.y + 180,0);
-        // else
-        // {
-        //     transform.rotation = Quaternion.Euler(0,rot.y,0);
-        // }
+      //  Physics.gravity = new Vector3(0,-15f,0);
+        transform.LookAt(FirstPersonController_Script.player.transform);
+        Vector3 rot = transform.rotation.eulerAngles;
+        if (Reverse == true)
+            transform.rotation = Quaternion.Euler(0,rot.y + 180,0);
+        else
+        {
+            transform.rotation = Quaternion.Euler(0,rot.y,0);
+        }
         //
         // if (health <= 0)
         // {
